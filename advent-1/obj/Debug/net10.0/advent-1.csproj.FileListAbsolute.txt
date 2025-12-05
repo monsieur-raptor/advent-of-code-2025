@@ -1,0 +1,14 @@
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/bin/Debug/net10.0/advent-1
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/bin/Debug/net10.0/advent-1.deps.json
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/bin/Debug/net10.0/advent-1.runtimeconfig.json
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/bin/Debug/net10.0/advent-1.dll
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/bin/Debug/net10.0/advent-1.pdb
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.AssemblyInfoInputs.cache
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.AssemblyInfo.cs
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.csproj.CoreCompileInputs.cache
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.dll
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/refint/advent-1.dll
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.pdb
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/advent-1.genruntimeconfig.cache
+/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/Debug/net10.0/ref/advent-1.dll
