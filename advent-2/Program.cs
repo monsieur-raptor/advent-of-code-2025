@@ -4,13 +4,11 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 string idFile = File.ReadAllText("id.txt");
 string[] idList = idFile.Split(',');
-// List<long> invalidId = new List<long>();
 var invalidId = new ConcurrentBag<long>();
 long invalidSum = 0;
-var sw = Stopwatch.StartNew();
+var chrono = Stopwatch.StartNew();
 Parallel.ForEach(idList, id =>
 {
-    // Console.WriteLine(id);
     string[] currentId = id.Split('-');
     long min = Convert.ToInt64(currentId[0]);
     long max = Convert.ToInt64(currentId[1]);
@@ -32,5 +30,5 @@ Parallel.ForEach(idList, id =>
 });
 invalidSum = invalidId.Sum();
 Console.WriteLine(invalidSum);
-sw.Stop();
-Console.WriteLine($"Temps écoulé: {sw.ElapsedMilliseconds}ms");
+chrono.Stop();
+Console.WriteLine($"Temps écoulé: {chrono.ElapsedMilliseconds}ms");
