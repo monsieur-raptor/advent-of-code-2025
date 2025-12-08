@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/advent-1.csproj": {}
+    "/home/simon/Documents/Programmation/Csharp/advent-code/advent-2/advent-2.csproj": {}
   },
   "projects": {
-    "/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/advent-1.csproj": {
+    "/home/simon/Documents/Programmation/Csharp/advent-code/advent-2/advent-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/advent-1.csproj",
-        "projectName": "advent-1",
-        "projectPath": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/advent-1.csproj",
+        "projectUniqueName": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-2/advent-2.csproj",
+        "projectName": "advent-2",
+        "projectPath": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-2/advent-2.csproj",
         "packagesPath": "/home/simon/.nuget/packages/",
-        "outputPath": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-1/obj/",
+        "outputPath": "/home/simon/Documents/Programmation/Csharp/advent-code/advent-2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/simon/.nuget/NuGet/NuGet.Config"
