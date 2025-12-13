@@ -1,12 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections.Concurrent;
-using System.Diagnostics;
 using System.Runtime.CompilerServices;
 string idFile = File.ReadAllText("id.txt");
 string[] idList = idFile.Split(',');
 var invalidId = new ConcurrentBag<long>();
 long invalidSum = 0;
-var chrono = Stopwatch.StartNew();
 Parallel.ForEach(idList, id =>
 {
     string[] currentId = id.Split('-');
@@ -18,17 +16,15 @@ Parallel.ForEach(idList, id =>
         string number = Convert.ToString(i);
         if (number.Length % 2 == 0)
         {
-            string firstHalf = (number[.. (number.Length/2)]);
-            string secondHalf = (number[(number.Length/2) ..]);
+            string firstHalf = number[.. (number.Length/2)];
+            string secondHalf = number[(number.Length/2) ..];
 
             if(firstHalf == secondHalf)
             {
-                invalidId.Add(Convert.ToInt64(number));
+                invalidId.Add(i);
             }   
         }
     }
 });
 invalidSum = invalidId.Sum();
 Console.WriteLine(invalidSum);
-chrono.Stop();
-Console.WriteLine($"Temps écoulé: {chrono.ElapsedMilliseconds}ms");

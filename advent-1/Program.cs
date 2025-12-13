@@ -1,12 +1,6 @@
 ﻿using System.IO.Pipelines;
 
-const int START_POSITION = 50;
-
-int dial = START_POSITION;
-int nbZero, stopZero, currentPosition;
-nbZero = stopZero = 0;
-
-(int DialPosition, int PointZero) RotateDial(int dial, int currentPosition)
+static (int DialPosition, int PointZero) RotateDial(int dial, int currentPosition)
 {
     int zero = 0;
 
@@ -29,6 +23,14 @@ nbZero = stopZero = 0;
     
     return (dial, zero);
 }
+
+// Main
+
+const int START_POSITION = 50;
+
+int dial = START_POSITION;
+int nbZero, stopZero, currentPosition;
+nbZero = stopZero = 0;
 
 string[] rotations = File.ReadAllLines("sequences.txt");
 foreach (String rotation in rotations)
