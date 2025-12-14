@@ -2,7 +2,7 @@
 
 static int getMaxJoltage(List<int> bank, int length, int maxJoltage, int iterations = 2, int startPosition = 0)
 {
-    while (iterations > 0)
+    for (int counter = iterations; counter > 0; counter--)
     {
         int digit = 9;
         while (digit > 0)
@@ -12,7 +12,7 @@ static int getMaxJoltage(List<int> bank, int length, int maxJoltage, int iterati
             {
                 if (bank[i] == digit)
                 {
-                    maxJoltage += bank[i] * Convert.ToInt32(Math.Pow(10, iterations - 1));
+                    maxJoltage += bank[i] * Convert.ToInt32(Math.Pow(10, counter - 1));
                     startPosition = i;
                     bank.RemoveAt(i);
                     maxFound = true;
@@ -23,14 +23,13 @@ static int getMaxJoltage(List<int> bank, int length, int maxJoltage, int iterati
             if (maxFound)
                 break;
         }
-        iterations--;
     }
     return maxJoltage;
 }
 
 // Main
 int joltage = 0;
-string[] banks= File.ReadAllLines("bank.txt");
+string[] banks= File.ReadAllLines("banks.txt");
 foreach (String bank in banks)
 {
     List<int> currentBank = new List<int>();
