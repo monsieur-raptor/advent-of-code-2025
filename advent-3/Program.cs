@@ -10,7 +10,6 @@ static int getMaxJoltage(List<int> bank, int length, int maxJoltage, int iterati
             bool maxFound = false;
             for (int i = startPosition; i < length - 1; i++)
             {
-                Console.WriteLine($"{digit} : {bank[i]} - {iterations}");
                 if (bank[i] == digit)
                 {
                     maxJoltage += bank[i] * Convert.ToInt32(Math.Pow(10, iterations - 1));
