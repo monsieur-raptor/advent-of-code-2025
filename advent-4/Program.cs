@@ -34,9 +34,7 @@ static int PaperRollsDetection(char[,] sequence, char[,] sequenceCopy, int x, in
                 continue;
 
                 else if (sequence[x+checkX, y + checkY].Equals('@'))
-                {
-                    count += 1;     
-                }   
+                count += 1;     
             }
         }
     }
